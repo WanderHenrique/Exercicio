@@ -1,53 +1,49 @@
-public class Main {
-    public static void main(String[] args) {
-        System.out.println(10 + 15);
-        System.out.println("10" + 2);
-        System.out.println(Integer.parseInt("10") * 2);
-        System.out.println(Integer.parseInt("10") / 3);
-        System.out.println(Integer.parseInt("10") % 3);
-        System.out.println(10 + (true ? 1 : 0));
-        System.out.println(10 == Integer.parseInt("10"));
-        System.out.println(10 == Integer.parseInt("10"));
-        System.out.println(10 < 11);
-        System.out.println(10 > 12);
-        System.out.println(10 <= 10.1);
-        System.out.println(10 > 9.99);
-        System.out.println(10 != Integer.parseInt("dez"));
-        System.out.println(10 + (true ? 1 : 0));
-        System.out.println("dez" + true);
-        System.out.println(10 + (false ? 1 : 0));
-        System.out.println(10 * (false ? 1 : 0));
-        System.out.println((true ? 1 : 0) + (true ? 1 : 0));
+console.log(10 + 15);
+console.log("10" + 2);
+console.log("10" * 2);
+console.log("10" / 3);
+console.log("10" % 3);
+console.log(10 + true);
+console.log(10 == "10");
+console.log(10 === "10");
+console.log(10 < 11);
+console.log(10 > 12);
+console.log(10 <= 10.1);
+console.log(10 > 9.99);
+console.log(10 != "dez");
+console.log(10 + true);
+console.log("dez" + true);
+console.log(10 + false);
+console.log(10 * false);
+console.log(true + true);
 
-        int x = 10;
-        int y = 10;
-        System.out.println(x++);
-        System.out.println(y--);
+let x = 10;
+let y = 10;
+console.log(x++);
+console.log(y--);
 
-        System.out.println(1 & 1);
-        System.out.println(1 & 0);
-        System.out.println(0 & 0);
-        System.out.println(1 & 0);
-        System.out.println(0 / 1);
+console.log(1 & 1);
+console.log(1 & 0);
+console.log(0 & 0);
+console.log(1 & 0);
+console.log(0 / 1);
 
-        String branco = "preto";
-        String preto = "cinza";
-        String cinza = "branco";
-        String carro = "preto";
-        int valor = 30000;
-        int prestacao = 750;
+let branco = "preto";
+let preto = "cinza";
+let cinza = "branco";
+let carro = "preto";
+let valor = 30000;
+let prestacao = 750;
 
-        //a) branco == “branco”
-        System.out.println(branco.equals("branco"));
+//a) branco == “branco”
+console.log(branco == "branco");
 
-        //b) branco == cinza
-        System.out.println(branco.equals(cinza));
+//b) branco == cinza
+console.log(branco == cinza);
 
-        //c) carro === branco
-        System.out.println(carro.equals(branco));
+//c) carro === branco
+console.log(carro === branco);
 
-       //d) var cavalo = carro == “preto” ? “cinza” : “marron”;
-    String cavalo = carro.equals("preto") ? "cinza" : "marron";
-       // cavalo é igual a "cinza"
-    }
-}
+//d) var cavalo = carro == “preto” ? “cinza” : “marron”;
+let cavalo = carro == "preto" ? "cinza" : "marron"; 
+// cavalo é igual a "cinza"
