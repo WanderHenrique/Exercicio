@@ -1,3 +1,4 @@
+// 1. Resolva as operações:
 console.log(10 + 15);
 console.log("10" + 2);
 console.log("10" * 2);
@@ -28,12 +29,13 @@ console.log(0 & 0);
 console.log(1 & 0);
 console.log(0 / 1);
 
-let branco = "preto";
-let preto = "cinza";
-let cinza = "branco";
-let carro = "preto";
-let valor = 30000;
-let prestacao = 750;
+//2. Responda as perguntas de acordo com as variáveis.
+var branco = "preto";
+var preto = "cinza";
+var cinza = "branco";
+var carro = "preto";
+var valor = 30000;
+var prestacao = 750;
 
 //a) branco == “branco”
 console.log(branco == "branco");
@@ -45,5 +47,16 @@ console.log(branco == cinza);
 console.log(carro === branco);
 
 //d) var cavalo = carro == “preto” ? “cinza” : “marron”;
-let cavalo = carro == "preto" ? "cinza" : "marron"; 
-// cavalo é igual a "cinza"
+var cavalo = carro == "preto" ? "cinza" : "marron";
+console.log(cavalo);
+
+//e) Quantas prestações são necessárias para pagar o valor do carro com uma entrada de 3.000? Demonstre a operação.
+let entrada = 3000;
+let restante = valor - entrada;
+let numPrestacoes = restante / prestacao;
+console.log(numPrestacoes);
+
+//f) Somando as variáveis de cores é formada uma string de quantos caracteres?
+let stringCores = branco + preto + cinza;
+let numCaracteres = stringCores.length;
+console.log(numCaracteres);
